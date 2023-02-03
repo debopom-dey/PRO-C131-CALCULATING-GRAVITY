@@ -19,4 +19,6 @@ for index in range(0,len(mass)):
     gravity.append(g)
 df["Gravity"]=gravity
 
+df.drop(['Unnamed: 0'],axis=1,inplace=True)
+
 df.to_csv("final.csv")
